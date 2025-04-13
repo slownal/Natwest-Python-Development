@@ -1,0 +1,29 @@
+{
+    "rules": [
+        {
+            "output_field": "outfield1",
+            "operation": "concat",
+            "input_fields": ["field1", "field2"]
+        },
+        {
+            "output_field": "outfield2",
+            "operation": "reference",
+            "input_fields": ["refdata1"]
+        },
+        {
+            "output_field": "outfield3",
+            "operation": "concat",
+            "input_fields": ["refdata2", "refdata3"]
+        },
+        {
+            "output_field": "outfield4",
+            "operation": "multiply_max",
+            "input_fields": ["field3", "field5", "refdata4"]
+        },
+        {
+            "output_field": "outfield5",
+            "operation": "max",
+            "input_fields": ["field5", "refdata4"]
+        }
+    ]
+} 
